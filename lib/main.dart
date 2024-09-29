@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:final_project/pages/add_product.dart';
 import 'package:final_project/pages/cart_page.dart';
 import 'package:final_project/pages/home_page.dart';
 import 'package:final_project/pages/item_page.dart';
@@ -22,6 +23,8 @@ class MyApp extends StatelessWidget {
         "/": (context) => const HomePage(),
         "cartPage": (context) => const CartPage(),
         "itemPage": (context) => ItemPage(),
+        "addProduct": (context) => AddProductScreen(), // Add the new route for AddProductScreen
+
       },
     );
   }

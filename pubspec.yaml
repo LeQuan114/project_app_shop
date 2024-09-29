@@ -38,6 +38,9 @@ dependencies:
   badges: ^3.1.2
   curved_navigation_bar: ^1.0.6
   icons_plus: ^4.0.0
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.3
+  get: ^4.6.6
   # clippy_flutter: ^1.1.1
 
 dev_dependencies:

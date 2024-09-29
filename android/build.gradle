@@ -1,3 +1,7 @@
+plugins {
+  
+  classpath "com.google.gms.google-services"
+}
 allprojects {
     repositories {
         google()
