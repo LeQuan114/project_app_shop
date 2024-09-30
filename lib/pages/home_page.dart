@@ -3,6 +3,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:final_project/pages/add_category.dart';
 import 'package:final_project/pages/cart_page.dart';
 import 'package:final_project/screens/welcome_screen.dart';
 import 'package:final_project/widgets/categories_widge.dart';
@@ -98,6 +99,10 @@ class HomePage extends StatelessWidget {
         onTap: (index) {
           switch (index) {
             case 0:
+               Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddCategory()),
+              );
               break;
             case 1:
               Navigator.push(

@@ -1,6 +1,11 @@
-plugins {
-  
-  classpath "com.google.gms.google-services"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.google.gms:google-services:4.4.2" // Cập nhật lên phiên bản mới hơn
+    }
 }
 allprojects {
     repositories {

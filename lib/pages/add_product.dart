@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Product'),
+        // title: Text('Add Product'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -100,38 +100,11 @@ class _AddProductScreenState extends State<AddProductScreen> {
                     ),
                   ),
                   SizedBox(width: 16),
-                  Expanded(
-                    child: DropdownButtonFormField<String>(
-                      decoration: InputDecoration(
-                        labelText: 'Brand',
-                        border: OutlineInputBorder(),
-                      ),
-                      value: selectedBrand,
-                      onChanged: (value) {
-                        setState(() {
-                          selectedBrand = value;
-                        });
-                      },
-                      items: brands
-                          .map((brand) => DropdownMenuItem(
-                                value: brand,
-                                child: Text(brand),
-                              ))
-                          .toList(),
-                    ),
-                  ),
+                 
                 ],
               ),
               SizedBox(height: 16),
-              SwitchListTile(
-                title: Text('Offer Product?'),
-                value: offerProduct,
-                onChanged: (value) {
-                  setState(() {
-                    offerProduct = value;
-                  });
-                },
-              ),
+            
               SizedBox(height: 16),
               Center(
                 child: ElevatedButton(
