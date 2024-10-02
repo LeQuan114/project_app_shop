@@ -3,9 +3,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:final_project/pages/add_category.dart';
+import 'package:final_project/controller/category/add_category.dart';
+import 'package:final_project/controller/dashboard_admin.dart';
 import 'package:final_project/pages/cart_page.dart';
-import 'package:final_project/screens/welcome_screen.dart';
 import 'package:final_project/widgets/categories_widge.dart';
 import 'package:final_project/widgets/home_app_bar.dart';
 import 'package:final_project/widgets/items_widge.dart';
@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
             case 2:
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => WelcomeScreen()),
+                MaterialPageRoute(builder: (context) => DashboardAdmin()),
               );
               break;
           }

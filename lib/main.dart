@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:final_project/pages/add_category.dart';
+import 'package:final_project/controller/category/add_category.dart';
 import 'package:final_project/pages/add_product.dart';
 import 'package:final_project/pages/cart_page.dart';
 import 'package:final_project/pages/home_page.dart';
